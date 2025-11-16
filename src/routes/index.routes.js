@@ -1,8 +1,8 @@
 import { Router } from "express";
-import tareasRoutes from "./tareas.routes.js"
+import colorsRoutes from "./colors.routes.js"
 
 const router = Router()
 
-router.use('/tareas/', tareasRoutes)
+router.use('/colores', colorsRoutes)
 
 export default router
