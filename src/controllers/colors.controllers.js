@@ -5,7 +5,6 @@ export const prueba = (req, res) => {
   res.send("Prueba desde el controlador de colores");
 };
 
-// Crear color
 export const crearColor = async (req, res) => {
   try {
     const nuevoColor = new Color(req.body);
@@ -24,7 +23,6 @@ export const crearColor = async (req, res) => {
   }
 };
 
-// Listar colores
 export const listarColor = async (req, res) => {
   try {
     const colores = await Color.find();
@@ -38,7 +36,6 @@ export const listarColor = async (req, res) => {
   }
 };
 
-// Obtener color por ID
 export const obtenerColorID = async (req, res) => {
   try {
     const colorBuscado = await Color.findById(req.params.id);
@@ -57,7 +54,6 @@ export const obtenerColorID = async (req, res) => {
   }
 };
 
-// Borrar color
 export const borrarColorID = async (req, res) => {
   try {
     const colorBuscado = await Color.findById(req.params.id);
